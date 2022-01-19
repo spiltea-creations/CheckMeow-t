@@ -28,16 +28,11 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="#"
-            ><img
-              src="assets/check-meow-t-logo-icon.png"
-              alt="Check Meow-t logo"
-              id="headerLogo-img"
-            />
-            <div id="headerLogo-txt">Check Meow-t Guide</></div></a
-          >
+          <a class="navbar-brand" href="index.html"><img src="assets/check-meow-t-logo-icon.png" alt="Check Meow-t logo" id="headerLogo-img" />
+            <div id="headerLogo-txt">Check Meow-t Guide</div>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -55,44 +50,26 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#tutorial">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#accordian-symptoms">Symptoms</a>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Health Conditions
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Feline Immunodeficiency Virus (FIV)</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Feline Leukemia Virus (FelV)
-                    </a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Fleas</a></li>
-                  <li><a class="dropdown-item" href="#">Ringworm</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Upper Respiratory Infections</a
-                    >
-                  </li>
+                  <li><a class="dropdown-item" href="conditions.html">Feline Immunodeficiency Virus (FIV)</a></li>
+                  <li><a class="dropdown-item" href="conditions.html">Feline Leukemia Virus (FelV)</a></li>
+                  <li><a class="dropdown-item" href="conditions.html">Fleas</a></li>
+                  <li><a class="dropdown-item" href="conditions.html">Ringworm</a></li>
+                  <li><a class="dropdown-item" href="conditions.html">Upper Respiratory Infections</a></li>
+                  <li><a class="dropdown-item" href="conditions.html">Urinary Tract Infections (UTI)</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -110,243 +87,293 @@
         </div>
       </nav>
     </header>
-    <section class="col container" id="welcome">
-      <div class="col banner-section" id="banner-welcome">
-        <div class="innerText-container" id="innerText-tutorial">
-          <h1 class="innerText-header">Tips for your Grumpy Cat</h1>
-          <hr />
-          <p class="innerText-p">from our Guide and Community</p>
-        </div>
-        <button class="btnSymptom">Share your experience</button>
-      </div>
-    </section>
-    <section class="col container section-container" id="tutorial">
-      <div class="section-header">
-          <span class="callout">START HERE</span>
-          <h2 class="section-header">How Check Meow-t Works</h2>
-        </div> 
-      <div class="container px-4 py-5" id="featured-3">
-       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col">
-          <div class="feature-icon bg-primary bg-gradient">
-           <svg class="bi" width="1em" height="1em"><img src="assets/clipboard-list-solid.svg"</svg>
+    <main>
+      <section class="col container" id="about">
+        <div class="col banner-section" id="banner-about">
+          <div class="innerText-container" id="innerText-tutorial">
+            <h1 class="innerText-header">Tips for your Grumpy Cat</h1>
+            <hr />
+            <p class="innerText-p">from our Guide and Community</p>
           </div>
-          <h2>One</h2>
-          <p>Review our list of
-             Common Cat Symptoms.</p>
-          <a href="banner-symptoms" class="icon-link">
-            <button>
-              Common Symptoms
-            </button>
-          </a>
+          <div class="linkContact">
+            <a href="contact.html">Share your experience</a>
+          </div>
         </div>
-        <div class="feature col">
-            <div class="feature-icon bg-primary bg-gradient">
-             <svg class="bi" width="1em" height="1em"><img src="assets/clipboard-list-solid.svg"</svg>
+      </section>
+      <section class="col container section-container" id="tutorial">
+        <div class="section-header">
+            <span class="callout">START HERE</span>
+            <h2 class="section-header">How Check Meow-t Works</h2>
+        </div> 
+        <div class="container" id="tutorial-3">
+          <div class="col-md-4 tutorial-col">
+            <div class="tutorial-icon">
+              <img src="assets/list-solid.svg" alt="step 1 tutorial">
+            </div>
+            <h2>One</h2>
+            <p>Review our list of Common Cat Symptoms. Contact us if you have any questions or yours is not shown.</p>
+            <a href="#symptoms" class="button-link">Common Symptoms</a>
+          </div>
+          <div class="col-md-4 tutorial-col">
+            <div class="tutorial-icon">
+              <img src="assets/clipboard-check-solid.svg" alt="step 2 tutorial">
             </div>
             <h2>Two</h2>
-            <p>Select what your cat has, and you will be shown feline
-                health conditions that typically show symptom.</p>
-            <a href="banner-symptoms" class="icon-link">
-              <button>
-                Common Symptoms
-              </button>
-            </a>
+            <p>Select which your cat has, and you will be shown feline health conditions that typically have this symptom.</p>
+            <a href="#symptoms" class="button-link">Select Symptom</a>
           </div>
-          <div class="feature col">
-              <div class="feature-icon bg-primary bg-gradient">
-               <svg class="bi" width="1em" height="1em"><img src="assets/clipboard-list-solid.svg"</svg>
-              </div>
-              <h2>Three</h2>
-              <p>Each Health Condition lists what you can do&nbsp;<strong>
-                  NOW </strong
-                >&nbsp;while waiting for a vet appointment.</p>
-              <a href="banner-symptoms" class="icon-link">
-                <button>
-                  Common Symptoms
-                </button>
-              </a>
-          </div>
-      </div>
-    </section>  
-    <section class="col container" id="symptoms">
-        <div class="col banner-section" id="banner-symptoms">
-          <div class="innerText-container" id="innerText-symptoms">
-            <h1 class="innerText-header">Common Cat Symptoms</h1>  
-            <hr />
-            <div class="accordion" id="accordian-symptoms">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne-vomiting">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="false"
-                    aria-controls="collapseOne"
-                  >
-                    Vomiting
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingOne-vomiting"
-                  data-bs-parent="#accordian-symptoms"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong>
-                    It is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element.
-                    These classes control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It's also worth noting that just about any HTML
-                    can go within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo-urinating">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    Urinating
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo-urinating"
-                  data-bs-parent="#accordian-symptoms"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong>
-                    It is hidden by default, until the collapse plugin adds
-                    the appropriate classes that we use to style each element.
-                    These classes control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It's also worth noting that just about any HTML
-                    can go within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree-diarhea">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    Diarhea
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingThree-diarhea"
-                  data-bs-parent="#accordian-symptoms"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong>
-                    It is hidden by default, until the collapse plugin adds
-                    the appropriate classes that we use to style each element.
-                    These classes control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It's also worth noting that just about any HTML
-                    can go within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour-scratching">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    Scratching
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFour-scratching"
-                  data-bs-parent="#accordian-symptoms"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong>
-                    It is hidden by default, until the collapse plugin adds
-                    the appropriate classes that we use to style each element.
-                    These classes control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It's also worth noting that just about any HTML
-                    can go within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive-squinting">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
-                    Squinting/rubbing
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive-squinting"
-                  data-bs-parent="#accordian-symptoms"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong>
-                    It is hidden by default, until the collapse plugin adds
-                    the appropriate classes that we use to style each element.
-                    These classes control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It's also worth noting that just about any HTML
-                    can go within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
-                  </div>
-                </div>
-              /div>
+          <div class="col-md-4 tutorial-col">
+            <div class="tutorial-icon">
+              <img src="assets/user-md-solid.svg" alt="step 3 tutorial">
+            </div>
+            <h2>Three</h2>
+            <p>Click Health Conditions to compare to your cats' behavior, and read what you can do&nbsp;<strong> NOW </strong>&nbsp;while waiting for a vet appointment.</p>
+            <a href="conditions.html" class="button-link">Common Symptoms</a>
           </div>
         </div>
-      </div>   
-    </section> 
-    
+      </section>  
+      <section class="col container" id="symptoms">
+          <div class="col banner-section" id="banner-symptoms">
+            <div class="innerText-container" id="innerText-symptoms">
+              <h1 class="innerText-header">Common Cat Symptoms</h1>  
+              <hr />
+              <div class="accordion" id="accordian-symptoms">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne-vomiting">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      Vomiting
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne-vomiting"
+                    data-bs-parent="#accordian-symptoms"
+                  >
+                    <div class="accordion-body">
+                      <h5>Possible Conditions:</h5>
+                      <ul class="symptomList">
+                        <li class="symptomList-item">Hairballs</li>
+                        <li class="symptomList-item">Ingesting Poisonous/Indedible Substance</li>
+                        <li class="symptomList-item">Internal parasites</li>
+                        <li class="symptomList-item">Urinary Tract Disease</li>
+                        <li class="symptomList-item">Diabetes</li>
+                      </ul>
+                      <h5>What to do Meow:</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Duis augue nisl, dictum vel augue ac, luctus finibus neque. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Aenean tincidunt sed turpis id ornare. Curabitur mi nibh, gravida vitae purus sed, pulvinar aliquet nisl. 
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                        Integer a laoreet dui. Sed finibus vitae ante et feugiat. 
+                        Donec condimentum, leo hendrerit lobortis mattis, sem tellus eleifend nibh, id tempus ligula est ut erat. 
+                        Cras quam tortor, faucibus eget elementum vel, molestie non ante. Donec maximus pretium sem ac eleifend. 
+                        Sed vitae ullamcorper enim, vitae euismod mi.
+                      </p>
+                      <h6 class="vetCallout">Most importantly CALL YOUR VET</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo-urinating">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Urinating
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo-urinating"
+                    data-bs-parent="#accordian-symptoms"
+                  >
+                  <div class="accordion-body">
+                    <h5>Possible Conditions:</h5>
+                    <ul class="symptomList">
+                      <li class="symptomList-item">Hairballs</li>
+                      <li class="symptomList-item">Ingesting Poisonous/Indedible Substance</li>
+                      <li class="symptomList-item">Internal parasites</li>
+                      <li class="symptomList-item">Urinary Tract Disease</li>
+                      <li class="symptomList-item">Diabetes</li>
+                    </ul>
+                    <h5>What to do Meow:</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Duis augue nisl, dictum vel augue ac, luctus finibus neque. 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Aenean tincidunt sed turpis id ornare. Curabitur mi nibh, gravida vitae purus sed, pulvinar aliquet nisl. 
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                      Integer a laoreet dui. Sed finibus vitae ante et feugiat. 
+                      Donec condimentum, leo hendrerit lobortis mattis, sem tellus eleifend nibh, id tempus ligula est ut erat. 
+                      Cras quam tortor, faucibus eget elementum vel, molestie non ante. Donec maximus pretium sem ac eleifend. 
+                      Sed vitae ullamcorper enim, vitae euismod mi.
+                    </p>
+                    <h6 class="vetCallout">Most importantly CALL YOUR VET</h6>
+                  </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree-diarhea">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Diarhea
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree-diarhea"
+                    data-bs-parent="#accordian-symptoms"
+                  >
+                  <div class="accordion-body">
+                    <h5>Possible Conditions:</h5>
+                    <ul class="symptomList">
+                      <li class="symptomList-item">Hairballs</li>
+                      <li class="symptomList-item">Ingesting Poisonous/Indedible Substance</li>
+                      <li class="symptomList-item">Internal parasites</li>
+                      <li class="symptomList-item">Urinary Tract Disease</li>
+                      <li class="symptomList-item">Diabetes</li>
+                    </ul>
+                    <h5>What to do Meow:</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Duis augue nisl, dictum vel augue ac, luctus finibus neque. 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Aenean tincidunt sed turpis id ornare. Curabitur mi nibh, gravida vitae purus sed, pulvinar aliquet nisl. 
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                      Integer a laoreet dui. Sed finibus vitae ante et feugiat. 
+                      Donec condimentum, leo hendrerit lobortis mattis, sem tellus eleifend nibh, id tempus ligula est ut erat. 
+                      Cras quam tortor, faucibus eget elementum vel, molestie non ante. Donec maximus pretium sem ac eleifend. 
+                      Sed vitae ullamcorper enim, vitae euismod mi.
+                    </p>
+                    <h6 class="vetCallout">Most importantly CALL YOUR VET</h6>
+                  </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour-scratching">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      Scratching
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour-scratching"
+                    data-bs-parent="#accordian-symptoms"
+                  >
+                  <div class="accordion-body">
+                    <h5>Possible Conditions:</h5>
+                    <ul class="symptomList">
+                      <li class="symptomList-item">Hairballs</li>
+                      <li class="symptomList-item">Ingesting Poisonous/Indedible Substance</li>
+                      <li class="symptomList-item">Internal parasites</li>
+                      <li class="symptomList-item">Urinary Tract Disease</li>
+                      <li class="symptomList-item">Diabetes</li>
+                    </ul>
+                    <h5>What to do Meow:</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Duis augue nisl, dictum vel augue ac, luctus finibus neque. 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Aenean tincidunt sed turpis id ornare. Curabitur mi nibh, gravida vitae purus sed, pulvinar aliquet nisl. 
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                      Integer a laoreet dui. Sed finibus vitae ante et feugiat. 
+                      Donec condimentum, leo hendrerit lobortis mattis, sem tellus eleifend nibh, id tempus ligula est ut erat. 
+                      Cras quam tortor, faucibus eget elementum vel, molestie non ante. Donec maximus pretium sem ac eleifend. 
+                      Sed vitae ullamcorper enim, vitae euismod mi.
+                    </p>
+                    <h6 class="vetCallout">Most importantly CALL YOUR VET</h6>
+                  </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive-squinting">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      Scratching
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFive-squinting"
+                    data-bs-parent="#accordian-symptoms"
+                  >
+                  <div class="accordion-body">
+                    <h5>Possible Conditions:</h5>
+                    <ul class="symptomList">
+                      <li class="symptomList-item">Hairballs</li>
+                      <li class="symptomList-item">Ingesting Poisonous/Indedible Substance</li>
+                      <li class="symptomList-item">Internal parasites</li>
+                      <li class="symptomList-item">Urinary Tract Disease</li>
+                      <li class="symptomList-item">Diabetes</li>
+                    </ul>
+                    <h5>What to do Meow:</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Duis augue nisl, dictum vel augue ac, luctus finibus neque. 
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Aenean tincidunt sed turpis id ornare. Curabitur mi nibh, gravida vitae purus sed, pulvinar aliquet nisl. 
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                      Integer a laoreet dui. Sed finibus vitae ante et feugiat. 
+                      Donec condimentum, leo hendrerit lobortis mattis, sem tellus eleifend nibh, id tempus ligula est ut erat. 
+                      Cras quam tortor, faucibus eget elementum vel, molestie non ante. Donec maximus pretium sem ac eleifend. 
+                      Sed vitae ullamcorper enim, vitae euismod mi.
+                    </p>
+                    <h6 class="vetCallout">Most importantly CALL YOUR VET</h6>
+                  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>   
+      </section> 
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="mx-auto">
+            <h1 class="fw-light">Can't Find Your Symptom?</h1>
+            <p class="lead text-muted">Contact us and submit your own.</p>
+            <a href="contact.html" class="button-link">Contact</a>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="footerMain">
         <div class="col-md-4 footer-column">
-          <h3>Contact</h3>
+          <h3>Follow Us</h3>
         </div>
         <div class="col-md-4 footer-column">
-          <h3>Contact</h3>
+          <h3>References</h3>
         </div>
         <div class="col-md-4 footer-column">
           <h3>Contact</h3>
