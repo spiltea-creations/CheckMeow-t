@@ -103,6 +103,9 @@ li.nav-item {
 #banner-symptoms {
   background-image: url(../assets/banner-symptoms.jpg);
 }
+#banner-contact {
+  background-image: url(../assets/banner-symptoms.jpg);
+}
 .innerText-container {
   width: 40%;
   height: auto;
@@ -119,12 +122,18 @@ li.nav-item {
   border-radius: 3px;
 }
 #innerText-symptoms {
-  
+  width: auto;
   border-radius: 3px;
   float: right;
   margin-left: 0;
   margin-right: 5%;
   padding: 1em;
+}
+#innerText-contact {
+  width: auto;
+  margin: 0 auto;
+  border-radius: 3px;
+  padding: 10px;
 }
 .innerText-header {
   margin-top: 1rem;
@@ -161,10 +170,10 @@ li.nav-item {
 .tutorial-col {
   padding: 4px;
 }
-.tutorial-icon img {
+.tutorial-icon {
   width: 50px;
-  height: 50px;
-  margin: 1em;
+  margin: 0 auto;
+  margin-bottom: 2em;
 }
 .button-link {
   margin: 5px;
@@ -231,7 +240,25 @@ h2.section-header {
 #contactMain {
 background-image: url(../assets/pexels-matteo-basile-9457036.jpg);
 }
-.footerMain {
+#contactMain h2 {
+  font-size: 1.5em;
+}
+input[type=text], [type=email] {
+  width: 250px;
+  padding: 4px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.form-symptoms-container {
+  margin: 1.5em 0;
+}
+textarea {
+  width: 250px;
+  padding: 4px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.footer-column-container {
   width: 100%;
   background-color: #144552;
   color: #f0efeb;
@@ -243,17 +270,40 @@ background-image: url(../assets/pexels-matteo-basile-9457036.jpg);
   justify-content: space-evenly;
 }
 
-.footerMain h3 {
+.footer-column-container h3 {
   color: #f0efeb;
+  margin-bottom: 0;
 }
 
 .footer-column {
   border: 1px solid #f0efeb;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-items: center;
-  padding: 5px;
+  padding: 15px;
+  line-height: .75em;
 }
-
+.footer-column-links {
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-link-item {
+  display: flex;
+}
+.footer-link {
+  color: #f0efeb;
+  padding: 5px;
+  text-decoration: none;
+  letter-spacing: .1rem;
+}
+.footer-link:hover  {
+  color: #999;
+  text-decoration: underline;
+}
 @media only screen and (max-width: 992px) {
   a.navbar-brand {
     border-right: none;
@@ -289,5 +339,7 @@ background-image: url(../assets/pexels-matteo-basile-9457036.jpg);
   #tutorial-3 {
     flex-direction: column;
   }
-  #inner
+  .footer-column-container {
+    flex-direction: column;
+  }
 }

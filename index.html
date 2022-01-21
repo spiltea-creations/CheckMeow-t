@@ -20,13 +20,13 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/sites.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/ece6266f57.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="body-main" id="indexMain">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
@@ -135,7 +135,7 @@
       <section class="col container" id="symptoms">
           <div class="col banner-section" id="banner-symptoms">
             <div class="innerText-container" id="innerText-symptoms">
-              <h1 class="innerText-header">Common Cat Symptoms</h1>  
+              <h2 class="innerText-header">Common Cat Symptoms</h2>  
               <hr />
               <div class="accordion" id="accordian-symptoms">
                 <div class="accordion-item">
@@ -368,16 +368,48 @@
       </section>
     </main>
     <footer>
-      <div class="footerMain">
-        <div class="col-md-4 footer-column">
-          <h3>Follow Us</h3>
+      <div class="footer-column-container">
+          <div class="col-md-4 footer-column" id="social">
+            <h3>Follow Us</h3>
+            <ul class="footer-column-links">
+              <li class="footer-link-item">
+                <a href="#" class="footer-link"><i class="fab fa-facebook-f fa-lg"></i></a>
+              </li>
+              <li class="footer-link-item">
+                <a href="#" class="footer-link"><i class="fab fa-twitter fa-lg"></i></a>
+              </li>
+              <li class="footer-link-item">
+                <a href="#" class="footer-link"><i class="fab fa-instagram fa-lg"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-column" id="references">
+            <h3>References</h3>
+            <ul class="footer-column-links">
+              <li class="footer-link-item">
+                <a href="https://www.aspca.org/pet-care/cat-care/common-cat-diseases" class="footer-link" target="_blank">ASPCA</a>
+              </li>
+              <li class="footer-link-item">
+                <a href="https://pets.webmd.com/cats/6-most-common-cat-health-problems" class="footer-link" target="_blank">Pets.WebMD</a>
+              </li>
+              <li class="footer-link-item">
+                <a href="https://www.catster.com/" class="footer-link" target="_blank">Catster</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-column" id="contactOptions">
+            <h3>Contact</h3>
+            <ul class="footer-column-links">
+              <li class="footer-link-item">
+                <a href="#" class="footer-link"><i class="fas fa-envelope">&nbsp;info@checkmeow-t.com</i></a>
+              </li>
+              <li class="footer-link-item">
+                <a href="#" class="footer-link"><i class="fas fa-mobile-alt">&nbsp;(333)333-3333</i></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-4 footer-column">
-          <h3>References</h3>
-        </div>
-        <div class="col-md-4 footer-column">
-          <h3>Contact</h3>
-        </div>
+        <div class="col footer-authoring">All Rights Reserved 2022 Ceat Meow-t®</div>
       </div>
     </footer>
     <script
