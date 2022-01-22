@@ -1,4 +1,6 @@
 # Check-Meow-t Guide
+Hosting Link: https://github.com/Spilt-tea-creations/CheckMeow-t
+Code Link: https://github.com/Spilt-tea-creations/CheckMeow-t.git
 
 ## Used assets (non-commercial)
 
