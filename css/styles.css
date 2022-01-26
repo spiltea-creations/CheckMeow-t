@@ -86,6 +86,12 @@ li.nav-item {
   color: #f0efeb !important;
   border-radius: 3px;
 }
+.navbar-nav .nav-link {
+  padding-left: 10px;
+}
+.navbar-light .navbar-toggler {
+  margin-right: 10px;
+}
 .banner-section {
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -123,7 +129,6 @@ li.nav-item {
 }
 #innerText-symptoms {
   width: auto;
-  border-radius: 3px;
   float: right;
   margin-left: 0;
   margin-right: 5%;
@@ -204,6 +209,14 @@ h2.section-header {
   font-size: 3em;
   color: Tomato;
   margin-bottom: 0.25em;
+}
+.symptomList {
+  list-style: none;
+  padding: 0;
+}
+.accordion-button:not(.collapsed) {
+  color:#144552;
+  background-color: #f0efeb;
 }
 #condContainer {
   padding: 0 10px;
@@ -312,9 +325,6 @@ textarea {
   #headerLogo-img,
   #headerLogo-txt {
     align-items: center;
-  }
-  .innerText-container {
-    box-shadow: 2px 2px 2px 0px #494949;
   }
   #innerText-tutorial {
     width: 100%;
